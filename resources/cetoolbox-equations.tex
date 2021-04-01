@@ -1,0 +1,165 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[numbers]{natbib}
+\usepackage{url}
+\bibliographystyle{unsrtnat}
+
+\title{CEToolbox Equations}
+\author{Y. François and J. Pansanel}
+\date{v1.4.5}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{siunitx}
+
+\begin{document}
+
+\maketitle
+
+
+\section{CEToolbox}
+
+The CEToolbox application\citep{cetoolbox} is a calculator for capillary electrophoresis\citep{capillaryelectrophoresis}. It permits to calculate several parameters of a capillary electrophoresis analysis, like the hydrodynamic injection, the volume of the capillary, the quantity of injected analyte or the electroosmotic mobility.
+
+This document presents the theoretical equations used by CEToolbox. For questions or remarks, please contact us through the CEToolbox project website.
+
+
+\section{Equations}
+
+\subsection{Hydrodynamic injection}
+
+The volume of injected sample (\si{\nano\liter}) is calculated following the Poiseuille's law\citep{poiseuille}:
+
+\[ V_{inj} = \frac{{\pi}d_c^4t{\Delta}P}{128{\eta}L} \times 10^{12} \]
+
+where \(d_c\) is the internal diameter of the capillary (\si{\meter}), \(t\) the time to window (\si{\s}), \({\Delta}P\) the applied pressure (\si{\pascal}), \(\eta\) the viscosity (\si{{\centi}P}) and \(L\) the total length of the capillary (\si{\meter}).
+
+
+\subsection{Capillary volume}
+
+The volume of the capillary (\si{\nano\liter}) is computed accordingly to:
+
+\[ V_{tot} = \frac{{\pi}d_c^2L}{4} \times 10^{12} \]
+
+where \(d_c\) is the internal diameter of the capillary (\si{\meter}) and \(L\) the total length of the capillary (\si{\meter}).
+
+
+\subsection{Capillary volume to window}
+
+The capillary volume to detection window (\si{\nano\liter}) is determined with:
+
+\[ V_{d} = \frac{{\pi}d_c^2l}{4} \times 10^{12} \]
+
+where \(d_c\) is the internal diameter of the capillary (\si{\meter}) and \(l\) the length to detection window (\si{\meter}).
+
+
+\subsection{Injection plug length}
+
+The injection plug length (\si{\milli\meter}) is calculated with the following formula:
+
+\[ l_{inj} = \frac{4V_{inj}}{{\pi}d_c^2} \times 10^{-9} \]
+
+where \(V_{inj}\) is the volume of sample injected (\si{\nano\liter}) and \(d_c\) is the internal diameter of the capillary (\si{\meter}).
+
+
+\subsection{Plug}
+
+The percentage of plug is the ratio between the volume of injected sample and the capillary volume:
+
+\[ \%_{tot} = \frac{V_{inj}}{V_{tot}} \times 100 \]
+
+where \(V_{inj}\) is the volume of sample injected (\si{\nano\liter}) and \(V_{tot}\) the volume of the capillary (\si{\nano\liter}).
+
+
+\subsection{Plug relative}
+
+The percentage of relative plug is the ratio between the volume of injected sample and capillary volume to window:
+
+\[ \%_{d} = \frac{V_{inj}}{V_d} \times 100 \]
+
+where \(V_{inj}\) is the volume of sample injected (\si{\nano\liter}) and \(V_d\) the capillary volume to window (\si{\nano\liter}).
+
+
+\subsection{Time to replace one volume}
+
+The time (\si{\second}) to replace one volume is computed with the following equation, obtained by combining the capillary volume and the hydrodynamic injection equations:
+
+\[ t = \frac{32{\eta}L^2}{d_c^2{\Delta}P} \times 10^{-3} \]
+
+where  \(\eta\) is the viscosity (\si{{\centi}P}), \(L\) the total length of the capillary (\si{\meter}), \(d_c\) the internal diameter of the capillary (\si{\meter}) and \({\Delta}P\) the applied pressure (\si{\pascal}).
+
+
+\subsection{Injection flow rate}
+
+The injection flow rate (\si{\nano\liter/\min}) is calculated with:
+
+\[ Q_{inj} = \frac{V_{tot}}{t} \]
+
+where \(V_{tot}\) is the volume of the capillary (\si{\nano\liter}) and \(t\) the time (\si{\min}).
+
+
+\subsection{Electrical field}
+
+The electrical field (\si{\volt\per\centi\meter}) is determined by:
+
+\[ E = \frac{U}{L} \times 10^{-2} \]
+
+where  \(U\) the voltage (\si{\volt}) and \(L\) the total length of the capillary (\si{\meter}).
+
+
+\subsection{Analyte injected}
+
+The quantity of injected analyte (\si{\nano\gram}) is computed with:
+
+\[ m = CV_{inj} \]
+
+where \(C\) is the concentration (\si{\gram/\liter}) and \(V_{inj}\) the volume of injected sample (\si{\nano\liter}).
+
+
+\subsection{Electroosmotic mobility}
+
+The electroosmotic mobility (\si{\meter\squared\per\volt\per\second}) is the ratio between the electrophoretic velocity and the electrical field:
+
+\[ \mu_{eof} = \frac{lL}{t_{eof}U} \]
+
+where \(l\) is the length to detection window (\si{\meter}), \(L\) the full length of the capillary (\si{\meter}), \(t_{eof}\) the electroosmosis time (\si{\second}) and \(U\) the voltage (\si{\volt}).
+
+
+\subsection{Separation flow rate}
+
+The separation flow rate (\si{\nano\liter\per\minute}) is determined with the formula:
+
+\[ Q_{sep} = \frac{{\pi}d_c^2\mu_{eof}E}{4} \times 60 \times 10^{14} \]
+
+where \(d_c\) is the inner diameter (\si{\meter}), \(E\) the electrical field (\si{\volt\per\centi\meter}) and \(\mu_{eof}\) the electroosmotic mobility (\si{\meter\squared\per\volt\per\second}).
+
+
+\subsection{Viscosity}
+
+The viscosity (\si{{\centi}P}) is computed with:
+
+\[ \eta = \frac{d_c^2t_m{\Delta}P}{32lL} \times 10^3 \]
+
+where \(d_c\) is the inner diameter (\si{\meter}), \(t_m\) the migration time (\si{\second}), \({\Delta}P\) the applied pressure (\si{\pascal}), \(l\) the length to detection window (\si{\meter}) and \(L\) the full length of the capillary (\si{\meter}), 
+
+
+\subsection{Conductivity}
+
+The conductivity (\si{\milli\siemens\per\meter}) is calculated with the formula\citep{conductivity}:
+
+\[ \kappa = \frac{4IL}{{\pi}d_c^2U} \times 10^3 \]
+
+where  \(I\) is the electric current (\si{\ampere}), \(L\) the full length of the capillary (\si{\meter}), \(d_c\) the inner diameter (\si{\meter}) and \(U\) the voltage (\si{\volt}).
+
+
+\subsection{effective mobility}
+
+The effective mobility (\si{\meter\squared\per\volt\per\second}) reprents the mobility of the compound wihtout taking into consideration the electroosmotic flow. It is calculated with the equation:
+
+\[ \mu_{eff} = \frac{lL}{t_mU} - \mu_{eof} \]
+
+where \(l\) is the length to detection window (\si{\meter}), \(L\) the full length of the capillary (\si{\meter}), \(t_m\) the migration time (\si{\second}), \(U\) the voltage (\si{\volt}) and \(\mu_{eof}\) the electroosmosis mobility (\si{\meter\squared\per\volt\per\second}).
+
+
+\bibliography{references}
+
+\end{document}
