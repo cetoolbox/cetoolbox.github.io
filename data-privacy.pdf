@@ -1,0 +1,145 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/Contents 11 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 10 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+5 0 obj
+<<
+/Outlines 7 0 R /PageLabels 12 0 R /PageMode /UseNone /Pages 10 0 R /Type /Catalog
+>>
+endobj
+6 0 obj
+<<
+/Author () /CreationDate (D:20220408063132+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220408063132+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (CEToolbox Data Privacy) /Trapped /False
+>>
+endobj
+7 0 obj
+<<
+/Count 2 /First 8 0 R /Last 9 0 R /Type /Outlines
+>>
+endobj
+8 0 obj
+<<
+/Dest [ 4 0 R /XYZ 62.69291 683.0236 0 ] /Next 9 0 R /Parent 7 0 R /Title (User Data)
+>>
+endobj
+9 0 obj
+<<
+/Dest [ 4 0 R /XYZ 62.69291 632.0236 0 ] /Parent 7 0 R /Prev 8 0 R /Title (Application Data)
+>>
+endobj
+10 0 obj
+<<
+/Count 1 /Kids [ 4 0 R ] /Type /Pages
+>>
+endobj
+11 0 obj
+<<
+/Length 1298
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 119.3549 0 Td (CEToolbox Data Privacy) Tj T* -119.3549 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 695.0236 cm
+q
+BT 1 0 0 1 0 26 Tm 3.44152 Tw 12 TL /F1 10 Tf 0 0 0 rg (The CEToolbox application is a calculator for capillary electrophoresis. It aims to provide several) Tj T* 0 Tw .810697 Tw (information on the separation of compounds like the hydrodynamic injection, the volume of the capillary,) Tj T* 0 Tw (the injection plug length or the quantity of injected analyte.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 662.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (User Data) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 644.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (The CEToolbox application does not use, store or collect any user related data.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 611.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Application Data) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 581.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .012339 Tw (The default values for the function parameters of the application are stored locally on the device where the) Tj T* 0 Tw (application is used. They are not stored in a remote location or shared with other devices.) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+12 0 obj
+<<
+/Nums [ 0 13 0 R ]
+>>
+endobj
+13 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000073 00000 n 
+0000000114 00000 n 
+0000000221 00000 n 
+0000000333 00000 n 
+0000000538 00000 n 
+0000000642 00000 n 
+0000000921 00000 n 
+0000000992 00000 n 
+0000001099 00000 n 
+0000001213 00000 n 
+0000001273 00000 n 
+0000002623 00000 n 
+0000002664 00000 n 
+trailer
+<<
+/ID 
+[<f922f0d844efde9196cdc4f4fc757232><f922f0d844efde9196cdc4f4fc757232>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 6 0 R
+/Root 5 0 R
+/Size 14
+>>
+startxref
+2698
+%%EOF
